@@ -13,7 +13,7 @@ Thus cleaning Twitter data, in order to potentially identify Tweets with self-re
 
 1. Dataset has been cleaned and pre-filtered for Bots and Spam, total number of tweets left: 129,536,339
 2. Misspelling correction is pretty slow and will be running in parallel (might not complete by Friday... yikes!)
-3. Twete attribution is also very slow and will be done in parallel, then we will remove the non-attributable tweets from final annotated sets
+3. Tweet attribution is also very slow and will be done in parallel, then we will remove the non-attributable tweets from final annotated sets
 4. Concept tagging is running on the full set, should be done later Wednesday
 5. medaCy / medSpacy / SciSpacy are all running on the full set, results expected by Thursday evening, give or take
 6. Manually annotated dataset evalution code is under development. 
