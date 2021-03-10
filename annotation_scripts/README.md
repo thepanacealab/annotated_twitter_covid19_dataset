@@ -69,11 +69,11 @@ This will generate two files as output:
 
 - *filename_medacy_annotations.tsv* : A TSV files with the following columns:
 	- **Tweet Id**
-	- **Text_section: ** Part of the tweet's text in which a match was found.
-	- **Span_start: ** Start position in which the match was found in the tweet's text.
-	- **Span_end: ** End position in which the match was found in the tweet's text.
-	- **Annotation_type: ** Matched concept extracted from the model.
-	- **Extras: ** Only used if additional information is provided.
+	- **Text_section:** Part of the tweet's text in which a match was found.
+	- **Span_start:** Start position in which the match was found in the tweet's text.
+	- **Span_end:** End position in which the match was found in the tweet's text.
+	- **Annotation_type:** Matched concept extracted from the model.
+	- **Extras:** Only used if additional information is provided.
 
 - *filename_medacy_tweets_tagged_tsv*:  A TSV file including only those tweets in which at least one match was found. The TSV file includes the following columns: **Tweet_id** and **Tweet_full_text**.
 
@@ -88,11 +88,11 @@ This will generate two files as output:
 
 - *filename_medacy_annotations.tsv* : A TSV files with the following columns:
 	- **Tweet Id**
-	- **Text_section: ** Part of the tweet's text in which a match was found.
-	- **Span_start: ** Start position in which the match was found in the tweet's text.
-	- **Span_end: ** End position in which the match was found in the tweet's text.
-	- **Annotation_type: ** Matched concept extracted from the model provided to medSpaCy.
-	- **Extras: ** Only used if additional information is provided.
+	- **Text_section:** Part of the tweet's text in which a match was found.
+	- **Span_start:** Start position in which the match was found in the tweet's text.
+	- **Span_end:** End position in which the match was found in the tweet's text.
+	- **Annotation_type:** Matched concept extracted from the model provided to medSpaCy.
+	- **Extras:** Only used if additional information is provided.
 
 - *filename_medspacy_tweets_tagged_tsv*:  A TSV file including only those tweets in which at least one match was found. The TSV file includes the following columns: **Tweet_id** and **Tweet_full_text**.
 
@@ -106,11 +106,11 @@ This will generate two files as output:
 
 - *filename_scispacy_annotations.tsv* : A TSV files with the following columns:
 	- **Tweet Id**
-	- **Text_section: ** Part of the tweet's text in which a match was found.
-	- **Span_start: ** Start position in which the match was found in the tweet's text.
-	- **Span_end: ** End position in which the match was found in the tweet's text.
-	- **Annotation_type: ** Matched concept extracted from the model provided to sciSpaCy (en_core_sci_lg Model) an linked with UMLS.
-	- **Extras: ** Only used if additional information is provided.
+	- **Text_section:** Part of the tweet's text in which a match was found.
+	- **Span_start:** Start position in which the match was found in the tweet's text.
+	- **Span_end:** End position in which the match was found in the tweet's text.
+	- **Annotation_type:** Matched concept extracted from the model provided to sciSpaCy (en_core_sci_lg Model) an linked with UMLS.
+	- **Extras:** Only used if additional information is provided.
 
 - *filename_scispacy_tweets_tagged_tsv*:  A TSV file including only those tweets in which at least one match was found. The TSV file includes the following columns: **Tweet_id** and **Tweet_full_text**.
 
