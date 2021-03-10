@@ -4,6 +4,7 @@
 ## Requirements - General
 Python 3.7+ is required for all scripts to work properly, as well as [Pandas](https://pypi.org/project/pandas/ "Pandas") and [NumPy](https://pypi.org/project/numpy/ "NumPy"). The specific requirements for each tagger, are listed down below:
 
+
 ### MedaCy -Requirements
 - Gensim 3.8.x
 ```
@@ -22,6 +23,7 @@ pip install git+https://github.com/NLPatVCU/medaCy.git
 pip install git+https://github.com/NLPatVCU/medaCy_model_clinical_notes.git
 ```
 
+
 ### MedSpaCy -Requirements
 - [MedSpaCy](https://github.com/medspacy/medspacy "MedSpaCy") 0.1.0.1
 ```
@@ -39,6 +41,7 @@ pip install PyRush
 ```
 pip install pip install https://github.com/abchapman93/spacy_models/raw/master/releases/en_info_3700_i2b2_2012-0.1.0/dist/en_info_3700_i2b2_2012-0.1.0.tar.gz
 ```
+
 
 ### SciSpaCy -Requirements
 - [SciSpaCy](https://github.com/allenai/scispacy "MedSpaCy") 0.3.0
@@ -59,6 +62,7 @@ pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.3.0/e
 
 All the three tagger scripts requires a TSV file as argument. Such TSV file consists of a dataset of tweets with a specific structure. Some examples can be found [here](https://github.com/thepanacealab/covid19_twitter "here"). It is important that the TSV file **should not** include any headers, and should have at least the following order and columns: *Tweet_Id, Date, Time, Verified, Tweet_Text, Language*
 
+
 ### MedaCy - Using the *medacy_tagger.py* script
 
 The way to use the script is as follows (in which the *filename.tsv*  is the TSV file mentioned before):
@@ -76,6 +80,7 @@ This will generate two files as output:
 	- **Extras:** Only used if additional information is provided.
 
 - *filename_medacy_tweets_tagged_tsv*:  A TSV file including only those tweets in which at least one match was found. The TSV file includes the following columns: **Tweet_id** and **Tweet_full_text**.
+
 
 
 ### MedsPaCy - Using the *medspacy_tagger.py* script
@@ -96,6 +101,7 @@ This will generate two files as output:
 
 - *filename_medspacy_tweets_tagged_tsv*:  A TSV file including only those tweets in which at least one match was found. The TSV file includes the following columns: **Tweet_id** and **Tweet_full_text**.
 
+
 ### ScisPaCy - Using the *scispacy_tagger.py* script
 
 The way to use the script is as follows (in which the *filename.tsv*  is the TSV file mentioned before):
@@ -113,6 +119,7 @@ This will generate two files as output:
 	- **Extras:** Only used if additional information is provided.
 
 - *filename_scispacy_tweets_tagged_tsv*:  A TSV file including only those tweets in which at least one match was found. The TSV file includes the following columns: **Tweet_id** and **Tweet_full_text**.
+
 
 ### Using the *annotation_evaluation.py* script
 
