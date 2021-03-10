@@ -1,3 +1,5 @@
+#Input format should be a TSV file with at least the following columns (with no headers) and in this order:
+#Tweet_Id, Date, Time, Verified, Tweet_Text, Language
 import re
 import pandas as pd
 import csv
