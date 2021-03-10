@@ -54,7 +54,6 @@ pip install spacy==2.3.2
 pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.3.0/en_core_sci_lg-0.3.0.tar.gz
 ```
 
-### SciSpacy - Using the *scispacy_tagger.py* script
 
 ## Instructions - How to use the scripts
 
