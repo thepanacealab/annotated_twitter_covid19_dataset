@@ -57,7 +57,7 @@ pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.3.0/e
 
 ## Instructions - How to use the scripts
 
-All the three tagger scripts requires a TSV file as argument. Such TSV file consists of a dataset of tweets with a specific structure. Some examples can be found [here](https://github.com/thepanacealab/covid19_twitter "here"). It is important that the TSV file **should not** include any headers.
+All the three tagger scripts requires a TSV file as argument. Such TSV file consists of a dataset of tweets with a specific structure. Some examples can be found [here](https://github.com/thepanacealab/covid19_twitter "here"). It is important that the TSV file **should not** include any headers, and should have at least the following order and columns: *Tweet_Id, Date, Time, Verified, Tweet_Text, Language*
 
 ### MedaCy - Using the *medacy_tagger.py* script
 
