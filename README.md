@@ -2,7 +2,7 @@
 
 ![TwitterDataset](http://www.panacealab.org/covid19/tweets_plot.png)
 
-### Authors: [Luis Alberto Robles Hernandez] (https://github.com/LuisRobles18), [Tiffany Callahan](http://tiffanycallahan.com/) and [Juan M. Banda](http://www.jmbanda.com/)
+### Authors: [Luis Alberto Robles Hernandez](https://github.com/LuisRobles18), [Tiffany Callahan](http://tiffanycallahan.com/) and [Juan M. Banda](http://www.jmbanda.com/)
 
 The use of social media data, like Twitter, for biomedical research has been gradually increasing over the years. With the COVID-19 pandemic, researchers have turned to more non-traditional sources of clinical data to characterize the disease in near-real time, study the societal implications of interventions, as well as the sequelae that recovered COVID-19 cases present (Long-). However, manually curated social media datasets are difficult to come by due to the expensive costs of manual annotation and the efforts needed to identify the correct texts. When datasets are available, they are usually very small and their annotations don’t generalize well over time or to larger sets of documents. As part of the 2021 Biomedical Linked Annotation Hackathon, we release our dataset of over 120 million automatically annotated tweets for biomedical research purposes. Incorporating best-practices, we identify tweets with potentially high clinical relevance. We evaluated our work by comparing several SpaCy-based annotation frameworks against a manually annotated gold-standard dataset. Selecting the best method to use for automatic annotation, we then annotated 120 million tweets and released them publicly for future downstream usage within the biomedical domain.
 
