@@ -1,31 +1,36 @@
-## Biomedically oriented automatically annotated Twitter COVID-19 Dataset
+## A biomedically oriented automatically annotated Twitter COVID-19 Dataset
 
 ![TwitterDataset](http://www.panacealab.org/covid19/tweets_plot.png)
 
-Taking advantage of having in-house [one of the largest Twitter COVID-19 chatter datasets](https://doi.org/10.5281/zenodo.3723939), in this project we will incorporate current best-practices and novel approaches to:
-1. Tweet attribution.
-2. Bot and Spam removal.
-3. Misspelling and colloquialism handling.
+### Authors: [Luis Alberto Robles Hernandez] (https://github.com/LuisRobles18), [Tiffany Callahan](http://tiffanycallahan.com/) and [Juan M. Banda](http://www.jmbanda.com/)
 
-Thus cleaning Twitter data, in order to potentially identify Tweets with self-reported symptoms/drug usage with clinical characterization relevance. Some of the components of this project have been worked on during the [COVID-19 Biohackathon](https://github.com/thepanacealab/covid19_biohackathon) and published at the [EMNLP NLP COVID-19 Workshop - Part 2](http://dx.doi.org/10.18653/v1/2020.nlpcovid19-2.25).
+The use of social media data, like Twitter, for biomedical research has been gradually increasing over the years. With the COVID-19 pandemic, researchers have turned to more non-traditional sources of clinical data to characterize the disease in near-real time, study the societal implications of interventions, as well as the sequelae that recovered COVID-19 cases present (Long-). However, manually curated social media datasets are difficult to come by due to the expensive costs of manual annotation and the efforts needed to identify the correct texts. When datasets are available, they are usually very small and their annotations don’t generalize well over time or to larger sets of documents. As part of the 2021 Biomedical Linked Annotation Hackathon, we release our dataset of over 120 million automatically annotated tweets for biomedical research purposes. Incorporating best-practices, we identify tweets with potentially high clinical relevance. We evaluated our work by comparing several SpaCy-based annotation frameworks against a manually annotated gold-standard dataset. Selecting the best method to use for automatic annotation, we then annotated 120 million tweets and released them publicly for future downstream usage within the biomedical domain.
 
-### Intermediate Updates ###
+Some of the components of this project have been worked on during the [COVID-19 Biohackathon](https://github.com/thepanacealab/covid19_biohackathon) and published at the [EMNLP NLP COVID-19 Workshop - Part 2](http://dx.doi.org/10.18653/v1/2020.nlpcovid19-2.25).
 
-1. Dataset has been cleaned and pre-filtered for Bots and Spam, total number of tweets left: 129,536,339
-2. Misspelling correction is pretty slow and will be running in parallel (might not complete by Friday... yikes!)
-3. Tweet attribution is also very slow and will be done in parallel, then we will remove the non-attributable tweets from final annotated sets
-4. Concept tagging is running on the full set, should be done later Wednesday
-5. medaCy / medSpacy / SciSpacy are all running on the full set, results expected by Thursday evening, give or take
-6. Manually annotated dataset evalution code is under development. 
+Dataset details:
 
-### Deliverables:
+The file columns are: Tweet_id, annotation_concept_id, annotationStart, annotationEnd
 
-The product of this project would be an automatically annotated dataset on all English Tweets. We are looking for additional participans if they want to provide software to automatically annotate any other language tweets, as the dataset has [68 other languages available](http://www.panacealab.org/covid19/images/language_distribution_all.png). We try evaluate multiple annotation strategies, from basic text tagging to using NER systems with specialized models trained for the identification of biomedical/medical entities like: [medaCy](https://github.com/NLPatVCU/medaCy), [medSpacy](https://github.com/medspacy/medspacy) and [SciSpacy](https://allenai.github.io/scispacy/). 
-We will release all tweet identifiers with all annotations made for the languages generated. We will use and expand the tools available in the Social Media Mining Toolkit (SMMT) developed during BLAH6 for this task, and will provide all annotations in brat and PubAnnotation formats.
+In order to use this resource, the annotation_concept_id column needs to be joined with the The [Observational Health Data Sciences and Informatics Vocabulary](https://athena.ohdsi.org/). 
 
-For evaluation, we have a manually annotated set that we will be using for a [SMM4H 2021 shared task 6](https://healthlanguageprocessing.org/smm4h-2021/task-6/) that we can use for evaluation of the proposed approach.
+We used a subset of all available vocabularies which included (version next to the name):
+- ICD9CM - ICD9CM v32 master descriptions
+- ICD10PCS - ICD10PCS 2021
+- CPT4 - 2020 Release
+- NDFRT - RXNORM 2018-08-12
+- HCPCS - 2020 Alpha Numeric HCPCS File
+- MeSH - 2020 Release
+- ICD10 - 2020 Release
+- ICD9Proc - ICD9CM v32 master descriptions
+- ICD10CM - ICD10CM FY2021 code descriptions
+- RxNorm - RxNorm 20210104
+- RxNorm Extension - RxNorm Extension 2021-02-12
+- SNOMED - 2020-07-31 SNOMED CT International Edition; 2020-09-01 SNOMED CT US Edition; 2020-10-28 SNOMED CT UK Edition
 
-### Bigger picture:
- Our aim with this project is to create build additional pieces to create a framework to pre-process Twitter data to extract clinical insights in a, preferably, automated way. This will add in generating large annotated datasets, ideally not only for COVID-19 applications, but clinical/epidemiological applications in the future.  
+NOTE: The full text of the tweet cannot be shared, but each individual tweet can be hydrated back to get all data elements. 
 
-### Team Members: [Juan M. Banda](http://www.jmbanda.com/) and [Tiffany Callahan](http://tiffanycallahan.com/)
+Dataset available at: https://doi.org/10.5281/zenodo.4606733
+
+Dataset publication available at: 
+
